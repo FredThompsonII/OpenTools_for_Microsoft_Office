@@ -2,9 +2,9 @@
 
 Classic toolbars, lorem ipsum, and tab support for Microsoft Office 2016-2024.
 
+* **OpenLorem:** Lorem Ipsum filler text, from the Insert menu or the Insert tab.
 * **OpenTabs:** a tab bar. Each open document gets a tab. Click a tab to bring that document to the front.
 * **OpenToolbars:** the classic menus and toolbars, on a ribbon tab named OpenTools.
-* **OpenLorem:** Lorem Ipsum filler text, from the Insert menu or the Insert tab.
 
 This is a new, independent project released under the MIT license. It contains no code from any other tab or
 classic-menu product.
@@ -15,10 +15,10 @@ Public Release 1.00
 
 ## Supported apps
 
-| App | OpenTabs | OpenToolbars | OpenLorem |
+| App | OpenLorem | OpenTabs | OpenToolbars |
 |---|---|---|---|
 | Word, Excel, PowerPoint | Yes | Yes | Yes |
-| Project, Visio | Yes | No | No |
+| Project, Visio | No | Yes | No |
 
 In Word, Excel and PowerPoint the tab bar sits inside each document's main window, between the ribbon and the
 document. In Project and Visio it sits inside the one main window, above the document area, because every document is
@@ -26,6 +26,42 @@ a window inside it.
 
 Outlook, Publisher and Access aren't supported. Outlook's windows are single messages and appointments. Publisher
 and Access open every document in its own copy of the app, with its own taskbar button, so tabs add little.
+
+## OpenLorem
+
+Lorem Ipsum is the last item on the classic Insert menu, and a button at the far right of the Insert tab.
+
+| App | What it does |
+|---|---|
+| Word | Types at the cursor: sections, an optional title per section, then 3 to 5 paragraphs of 5 sentences |
+| Excel | Types one paragraph into the active cell |
+| PowerPoint | Fills the empty text placeholders on the current slide |
+
+The counts are set on the Lorem Ipsum settings page.
+
+## OpenTabs
+
+Each open document gets a tab. Click a tab to bring that document to the front.
+
+* Double-click or middle-click a tab to close it.
+* Drag tabs to reorder them.
+* The current tab's name is bold.
+* Each tab shows the file's icon.
+* A small dot marks a document with unsaved changes.
+* Hover over a tab to see the file's full path.
+* Files with the same name from different folders show the folder too, for example "Report.docx (Q3)".
+* Long names are shortened in the middle, so the extension stays visible.
+* The + button at the end of the tabs starts a new document.
+* The X button at the far right closes every document. It asks first, and can close the app as well.
+* Tabs wrap onto more rows when they don't fit. With that turned off, an arrow at the end of the row lists every
+  open document.
+* The tab bar follows the Office theme and scales with Windows' display settings.
+
+Window options for Word, Excel and PowerPoint:
+
+* **Single-window mode:** every document window gets the same size and place, so the tabs switch between documents
+  as if they were one window.
+* **Keep the selected ribbon tab in sync** between documents.
 
 ## OpenToolbars
 
@@ -44,18 +80,6 @@ When the window narrows, Office shrinks the groups from the right, and finally f
 drop-down button. Nothing is lost off the edge.
 
 Each app opens on the OpenTools tab, and so does each new window. Turn this off per app on the Apps page.
-
-## OpenLorem
-
-Lorem Ipsum is the last item on the classic Insert menu, and a button at the far right of the Insert tab.
-
-| App | What it does |
-|---|---|
-| Word | Types at the cursor: sections, an optional title per section, then 3 to 5 paragraphs of 5 sentences |
-| Excel | Types one paragraph into the active cell |
-| PowerPoint | Fills the empty text placeholders on the current slide |
-
-The counts are set on the Lorem Ipsum settings page.
 
 ## Build and install
 
