@@ -1,0 +1,291 @@
+# OpenToolbars commands for Excel, from claude_ClassicToolbar_Excel_Commands_rev02_2026-10-24.md, in table order.
+# The build compresses this file into the DLL. Format: "menu <id> <caption number> <fallback caption>" starts
+# a menu, with 0 meaning no caption number. "Parent|Command" puts a command in a submenu named Parent.
+# "standard", "formatting", "drawing1" and "drawing2" start the rows. Every other line is one Office
+# command name (idMso).
+
+menu ot_menu_file 30002 &File
+FileNew
+FileOpen
+FileClose
+FileSave
+FileSaveAsMenu
+FileSaveAsWebPage
+WindowSaveWorkspace
+FilePermissionRestrictMenu
+WebPagePreview
+PageSetupPageDialog
+PrintAreaMenu
+FilePrintPreview
+FilePrint
+FilePrepareMenu
+FileSendMenu
+AdvancedFileProperties
+FileOpenRecentFile
+FileExit
+
+menu ot_menu_edit 30003 &Edit
+Undo
+Redo
+Cut
+Copy
+ShowClipboard
+Paste
+PasteSpecialDialog
+PasteAsHyperlink
+FillMenu
+ClearMenu
+CellsDelete
+SheetDelete
+SheetMoveOrCopy
+FindDialogExcel
+ReplaceDialog
+GoTo
+FileLinksToFiles
+ObjectFormatDialog
+
+menu ot_menu_view 30004 &View
+ViewNormalViewExcel
+ViewPageLayoutView
+ViewPageBreakPreviewView
+ViewFormulaBar
+GridlinesExcel
+ViewMessageBar
+HeaderFooterInsert
+ReviewShowAllComments
+ViewCustomViews
+ViewFullScreenView
+ZoomDialog
+
+menu ot_menu_insert 30005 &Insert
+CellsInsertDialog
+SheetRowsInsert
+SheetColumnsInsert
+SheetInsert
+ChartTypeAllInsertDialog
+SymbolInsert
+InsertBuildingBlocksEquationsGallery
+PageBreakMenu
+FunctionWizard
+Name|NameManager
+Name|NameCreateFromSelection
+Name|NameDefine
+ReviewNewComment
+SlicerInsert
+Picture|ClipArtInsert
+Picture|PictureInsertFromFile
+Picture|ShapesInsertGallery
+Picture|WordArtInsertGallery
+Picture|SmartArtInsert
+Picture|ScreenshotInsertGallery
+OleObjectctInsert
+HyperlinkInsert
+
+menu ot_menu_format 30006 F&ormat
+ChartFormatSelection
+FormatCellsDialog
+Row|RowHeight
+Row|RowHeightAutoFit
+Row|RowsHide
+Row|RowsUnhide
+Column|ColumnWidth
+Column|ColumnWidthAutoFit
+Column|ColumnsHide
+Column|ColumnsUnhide
+Column|ColumnWidthDefault
+Sheet|SheetRename
+Sheet|SheetHide
+Sheet|SheetUnhide
+Sheet|SheetBackground
+Sheet|SheetTabColorGallery
+AutoFormatDialog
+ConditionalFormattingMenu
+StylesDialogClassic
+FormatAsTableGallery
+Themes|ThemesGallery
+Themes|ThemeColorsGallery
+Themes|ThemeFontsGallery
+Themes|ThemeEffectsGallery
+
+menu ot_menu_tools 30007 &Tools
+Spelling
+Translate
+ErrorCheckingMenu
+ResearchPane
+ReviewShareWorkbook
+ReviewTrackChangesMenu
+CompareAndMergeWorkbooks
+Protection|SheetProtect
+Protection|ReviewAllowUsersToEditRanges
+Protection|ReviewProtectWorkbook
+Protection|ReviewProtectAndShareWorkbook
+MenuPublish
+GoalSeek
+ScenarioManager
+Formula Auditing|TracePrecedents
+Formula Auditing|TraceDependents
+Formula Auditing|TraceError
+Formula Auditing|TraceRemoveAllArrows
+Formula Auditing|FormulaEvaluate
+Formula Auditing|WatchWindow
+Formula Auditing|ShowFormulas
+PlayMacro
+Macros|MacroRecord
+Macros|MacroRelativeReferences
+MacroSecurity
+VisualBasic
+AddInManager
+AutoCorrect
+QuickAccessToolbarCustomization
+ApplicationOptionsDialog
+
+menu ot_menu_data 30011 &Data
+Sort|SortAscendingExcel
+Sort|SortDescendingExcel
+Sort|SortDialog
+Filter|Filter
+Filter|SortClear
+Filter|AdvancedFilterDialog
+SortFilterMenu
+DataFormExcel
+OutlineSubtotals
+DataValidation
+DataTable
+ConvertTextToTable
+Consolidate
+Group and Outline|OutlineHideDetail
+Group and Outline|OutlineShowDetail
+Group and Outline|OutlineGroup
+Group and Outline|OutlineUngroup
+Group and Outline|OutlineAuto
+Group and Outline|OutlineClear
+Group and Outline|OutlineSettings
+PivotTableReport
+GetExternalDataImportClassic
+Get External Data|GetExternalDataFromAccess
+Get External Data|GetExternalDataFromWeb
+Get External Data|GetExternalDataFromText
+Get External Data|GetExternalDataFromOtherSources
+Get External Data|GetExternalDataExistingConnections
+List|TableInsertExcel
+List|TableResize
+List|TableStyleTotalsRow
+List|TableConvertToRange
+List|TableExportMenu
+List|TableOpenInBrowser
+List|TableUnlinkExternalData
+List|ChangesDiscardAndRefresh
+ConnectionProperties
+RefreshAllMenu
+
+menu ot_menu_window 30009 &Window
+WindowNew
+WindowsArrangeAll
+ViewSideBySide
+WindowHide
+WindowUnhide
+WindowSplitToggle
+ViewFreezePanesGallery
+WindowSwitchWindowsMenuExcel
+
+menu ot_menu_draw 0 D&raw
+ObjectsGroupMenu
+ObjectBringToFrontMenu
+ObjectSendToBackMenu
+ObjectAlignMenu
+ObjectRotateGallery
+ShapeRerouteConnectors
+ObjectEditPoints
+ShapeChangeShapeGallery
+ObjectSetShapeDefaults
+
+standard
+FileNewDefault
+FileOpen
+FileClose
+FileSave
+FileSendAsAttachment
+FilePrintQuick
+FilePrintPreview
+Spelling
+Thesaurus
+ResearchPane
+Cut
+Copy
+PasteMenu
+FormatPainter
+ClearFormats
+Undo
+Redo
+SelectMenuExcel
+NameManager
+HyperlinkInsert
+AutoSumMenu
+FunctionWizard
+SortAscendingExcel
+SortDescendingExcel
+SortDialog
+Filter
+SortClear
+ChartInsert
+SmartArtInsert
+ShapesInsertGallery
+ZoomClassic
+Help
+
+formatting
+CellStylesGallery
+Font
+FontSize
+Bold
+Italic
+Underline
+UnderlineDouble
+AlignLeft
+AlignCenter
+AlignRight
+MergeCenter
+AlignTopExcel
+AlignMiddleExcel
+AlignBottomExcel
+AccountingFormatMenu
+PercentStyle
+CommaStyle
+DecimalsIncrease
+DecimalsDecrease
+IndentDecreaseExcel
+IndentIncreaseExcel
+BordersGallery
+CellFillColorPicker
+FontColorPicker
+ConditionalFormattingMenu
+FormatAsTableGallery
+
+drawing1
+ObjectsSelect
+ShapesInsertGallery
+ShapeStraightConnector
+ShapeStraightConnectorArrow
+TextBoxInsertExcel
+WordArtInsertGallery
+ClipArtInsert
+PictureInsertFromFile
+ContrastMore
+ContrastLess
+BrightnessMore
+BrightnessLess
+PictureCrop
+
+drawing2
+ObjectFormatDialog
+PicturesCompress
+PictureReset
+PictureChange
+ShapeFillColorPicker
+ShapeOutlineColorPicker
+TextFillColorPicker
+OutlineWeightGallery
+OutlineDashesGallery
+ArrowStyleGallery
+_3DEffectsGalleryClassic
+ShadowStyleGalleryClassic
